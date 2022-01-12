@@ -439,3 +439,21 @@ a[href^="mailto:"]:hover {
     transform: translate(5px, 5px);
     border-radius: 5px;
 }
+
+@keyframes blinky {
+    0% {
+        opacity: 1;
+        background: purple;
+    }
+    100% {
+        opacity: 0;
+        color: yellow;
+        transform: scale(1.05);
+        background: red;
+        padding: 5px;
+    }
+}
+
+.blink-text {
+    animation: blinky .2s ease-in-out 0s infinite alternate forwards;
+}
